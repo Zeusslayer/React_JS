@@ -1,5 +1,7 @@
 import ExpenseDate from "./ExpenseDate.js";
+import Card from "./Card";
 import "./ExpenseItem.css"; // must import css to the js file
+
 function ExpenseItem(props) {
   // use the const to hard-code data and use props to access App.js attributes
 
@@ -12,13 +14,13 @@ function ExpenseItem(props) {
   //you can add operations inside the brackets
 
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
       <ExpenseDate date2={props.date} />
       <div className="expense-item__description">
         <h2>{props.title}</h2>
         <div className="expense-item__price">NOK {props.amount}</div>
       </div>
-    </div>
+    </Card>
   );
 }
 
