@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import ExpenseDate from "./ExpenseDate.js";
 import Card from "../UI/Card";
 import "./ExpenseItem.css"; // must import css to the js file
 
+// use the const to hard-code data and use props to access App.js attributes
+//return should only return one div, there may be others inside it
+//adding css to divs with className
+//you can add operations inside the brackets
 const ExpenseItem = (props) => {
-  // use the const to hard-code data and use props to access App.js attributes
-  //return should only return one div, there may be others inside it
-  //adding css to divs with className
-  //you can add operations inside the brackets
-  let title = props.title;
+  const [title, setTitle] = useState(props.title);//[variable,the function that updates it]
+
   const clickHandler = () => {
-    console.log("Clicked");
-    title = "Updated";
+    setTitle(title + " Updated!");
+    console.log(title);
   };
 
   return (
