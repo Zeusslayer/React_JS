@@ -1,6 +1,7 @@
 import React from "react";
 import Expenses from "./components/Expenses/Expenses";
-function App() {
+
+const App = () => {
   const expenses = [
     // array of objects
     {
@@ -44,6 +45,6 @@ function App() {
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;

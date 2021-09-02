@@ -3,7 +3,7 @@ import ExpenseDate from "./ExpenseDate.js";
 import Card from "../UI/Card";
 import "./ExpenseItem.css"; // must import css to the js file
 
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   // use the const to hard-code data and use props to access App.js attributes
 
   /* const expenseDate = new Date(2021, 8, 28); //september
@@ -23,6 +23,6 @@ function ExpenseItem(props) {
       </div>
     </Card>
   );
-}
+};
 
 export default ExpenseItem;
