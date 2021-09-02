@@ -5,14 +5,11 @@ import "./ExpenseItem.css"; // must import css to the js file
 
 const ExpenseItem = (props) => {
   // use the const to hard-code data and use props to access App.js attributes
-
-  /* const expenseDate = new Date(2021, 8, 28); //september
-  const expenseTitle = "Car Insurance";
-  const expenseAmount = 294.67; */
-
   //return should only return one div, there may be others inside it
   //adding css to divs with className
   //you can add operations inside the brackets
+
+  const clickHandler = () => {console.log("Clicked")};
 
   return (
     <Card className="expense-item">
@@ -21,6 +18,7 @@ const ExpenseItem = (props) => {
         <h2>{props.title}</h2>
         <div className="expense-item__price">NOK {props.amount}</div>
       </div>
+      <button onClick={clickHandler}>Change the Title</button>
     </Card>
   );
 };
