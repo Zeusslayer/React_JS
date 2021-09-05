@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ExpenseDate from "./ExpenseDate.js";
 import Card from "../UI/Card";
 import "./ExpenseItem.css"; // must import css to the js file
