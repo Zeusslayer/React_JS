@@ -8,21 +8,13 @@ import "./ExpenseItem.css"; // must import css to the js file
 //adding css to divs with className
 //you can add operations inside the brackets
 const ExpenseItem = (props) => {
-  const [title, setTitle] = useState(props.title);//[variable,the function that updates it]
-
-  const clickHandler = () => {
-    setTitle(title + " Updated!");
-    console.log(title);
-  };
-
   return (
     <Card className="expense-item">
       <ExpenseDate date2={props.date} />
       <div className="expense-item__description">
-        <h2>{title}</h2>
+        <h2>{props.title}</h2>
         <div className="expense-item__price">NOK {props.amount}</div>
       </div>
-      <button onClick={clickHandler}>Change the Title</button>
     </Card>
   );
 };
