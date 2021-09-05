@@ -7,8 +7,9 @@ const ExpenseForm = (props) => {
   const [enteredDate, setEnteredDate] = useState("");
 
   //const [userInput, setUserInput] = useState({
-  //  //one state instead of three separe states
-  //  //must update every single value on each call
+  //  // one state instead of three separe states
+  //  // must update every single value on each call
+  //  // use this if you want to update state depending on the previous one
   //  enteredTitle: "",
   //  enteredAmount: "",
   //  enteredDate: "",
