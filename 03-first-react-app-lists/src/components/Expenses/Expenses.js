@@ -22,6 +22,7 @@ const Expenses = (props) => {
         {props.items.map((expense) => (
           //instead of multiple ExpenseItem for each item, we dynamically mapped ExpenseItem for each element of the array
           <ExpenseItem
+            key={expense.id}
             title={expense.title}
             amount={expense.amount}
             date={expense.date}
