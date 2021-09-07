@@ -9,13 +9,15 @@ import "./ExpenseItem.css"; // must import css to the js file
 //you can add operations inside the brackets
 const ExpenseItem = (props) => {
   return (
-    <Card className="expense-item">
-      <ExpenseDate date2={props.date} />
-      <div className="expense-item__description">
-        <h2>{props.title}</h2>
-        <div className="expense-item__price">NOK {props.amount}</div>
-      </div>
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date2={props.date} />
+        <div className="expense-item__description">
+          <h2>{props.title}</h2>
+          <div className="expense-item__price">NOK {props.amount}</div>
+        </div>
+      </Card>
+    </li>
   );
 };
 
